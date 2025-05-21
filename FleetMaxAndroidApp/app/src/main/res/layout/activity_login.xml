@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.075" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewCnpjLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CNPJ"
@@ -31,7 +31,7 @@
         android:layout_marginStart="32dp" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/editTextCnpj"
         android:layout_width="331dp"
         android:layout_height="43dp"
         android:background="@drawable/edittext_custom"
@@ -40,24 +40,24 @@
         android:inputType="text"
         android:padding="10dp"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintTop_toBottomOf="@id/textViewCnpjLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewEmailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Email"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/editTextText3"
+        app:layout_constraintTop_toBottomOf="@id/editTextCnpj"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginStart="32dp" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextEmail"
         android:layout_width="331dp"
         android:layout_height="43dp"
         android:background="@drawable/edittext_custom"
@@ -66,24 +66,24 @@
         android:inputType="textEmailAddress"
         android:padding="10dp"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmailLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewSenhaLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Senha"
         android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/editTextText"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
         android:layout_marginStart="32dp" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/editTextSenha"
         android:layout_width="331dp"
         android:layout_height="43dp"
         android:background="@drawable/edittext_custom"
@@ -92,41 +92,43 @@
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/textView5"
+        app:layout_constraintTop_toBottomOf="@id/textViewSenhaLabel"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonLogin"
         android:layout_width="331dp"
         android:layout_height="49dp"
         android:text="Login"
         android:backgroundTint="#FAAC33"
-        app:layout_constraintTop_toBottomOf="@id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@id/editTextSenha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textViewNovo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Novo na Fllet Max?"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textViewRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Comece aqui!"
         android:textColor="#F8AB33"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/textView6"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/textViewNovo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
