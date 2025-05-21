@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1D293D"
-    tools:context=".Login">
+    android:background="#1D293D">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageViewLogoLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="Logo"
@@ -17,120 +15,86 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.075" />
-
-    <TextView
-        android:id="@+id/textViewCnpjLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CNPJ"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/imageView2"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="24dp"
-        android:layout_marginStart="32dp" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <EditText
-        android:id="@+id/editTextCnpj"
-        android:layout_width="331dp"
-        android:layout_height="43dp"
-        android:background="@drawable/edittext_custom"
-        android:hint="Digite seu CNPJ"
-        android:hintTextColor="#AAAAAA"
-        android:inputType="text"
-        android:padding="10dp"
-        android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/textViewCnpjLabel"
+        android:id="@+id/edtCNPJ"
+        android:hint="CNPJ"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:backgroundTint="#FFA726"
+        android:inputType="number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogoLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
-
-    <TextView
-        android:id="@+id/textViewEmailLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/editTextCnpj"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp" />
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="32dp"/>
 
     <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="331dp"
-        android:layout_height="43dp"
-        android:background="@drawable/edittext_custom"
-        android:hint="Digite seu email"
-        android:hintTextColor="#AAAAAA"
+        android:id="@+id/edtEmail"
+        android:hint="Email"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:backgroundTint="#FFA726"
         android:inputType="textEmailAddress"
-        android:padding="10dp"
-        android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/textViewEmailLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtCNPJ"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
-
-    <TextView
-        android:id="@+id/textViewSenhaLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Senha"
-        android:textColor="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp" />
+        android:layout_marginHorizontal="32dp"/>
 
     <EditText
-        android:id="@+id/editTextSenha"
-        android:layout_width="331dp"
-        android:layout_height="43dp"
-        android:background="@drawable/edittext_custom"
-        android:hint="Digite sua senha"
-        android:hintTextColor="#AAAAAA"
+        android:id="@+id/edtSenha"
+        android:hint="Senha"
+        android:textColorHint="#fff"
+        android:textColor="#fff"
+        android:backgroundTint="#FFA726"
         android:inputType="textPassword"
-        android:padding="10dp"
-        android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/textViewSenhaLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"/>
 
     <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="331dp"
-        android:layout_height="49dp"
+        android:id="@+id/btnLogin"
         android:text="Login"
-        android:backgroundTint="#FAAC33"
-        app:layout_constraintTop_toBottomOf="@id/editTextSenha"
+        android:backgroundTint="#FFA726"
+        android:textColor="#000"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/edtSenha"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp" />
+        android:layout_marginHorizontal="32dp" />
 
     <TextView
-        android:id="@+id/textViewNovo"
+        android:id="@+id/txtEsqueciSenha"
+        android:text="Esqueci senha"
+        android:textColor="#FFA726"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Novo na Fllet Max?"
-        android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"/>
 
     <TextView
-        android:id="@+id/textViewRegister"
+        android:id="@+id/txtNovo"
+        android:text="Novo na Filet Max?\nComece aqui!"
+        android:textColor="#FFA726"
+        android:textAlignment="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Comece aqui!"
-        android:textColor="#F8AB33"
-        android:textStyle="bold"
-        android:clickable="true"
-        android:focusable="true"
-        app:layout_constraintTop_toBottomOf="@id/textViewNovo"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp" />
-
+        android:layout_marginBottom="32dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
